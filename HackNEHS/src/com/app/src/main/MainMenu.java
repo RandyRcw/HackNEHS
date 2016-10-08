@@ -1,15 +1,20 @@
 package com.app.src.main;
 
-import javax.swing.JFrame;
+import java.awt.Color;
+import java.awt.Graphics;
 
-public class MainMenu
+import javax.swing.JPanel;
+
+public class MainMenu extends JPanel
 {
-	public static void main(String[] args)
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	public void paint(Graphics g)
 	{
-		JFrame frame = new JFrame("CLOTHING APP");
+		super.paint(g);
 		
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(800, 600);
-		frame.setVisible(true);
+		g.setColor(Color.BLUE);
+		g.fillRect(0, 0, 500, 500);
 	}
 }
